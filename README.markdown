@@ -1,22 +1,6 @@
-[<img alt="infoam" src="https://github.com/HarishReyya29/infoam/raw/main/logo.png" height="65">](https://github.com/HarishReyya29/infoam)
-
 # infoam
 
 **infoam** is a Python library designed to streamline interaction with [OpenFOAM](https://www.openfoam.com), offering a user-friendly, contemporary, and efficient interface.
-
-[![Documentation](https://img.shields.io/readthedocs/infoam)](https://infoam-docs.readthedocs.io/)
-[![CI](https://github.com/HarishReyya29/infoam/actions/workflows/ci.yml/badge.svg)](https://github.com/HarishReyya29/infoam/actions/workflows/ci.yml)
-[![Codecov](https://codecov.io/gh/HarishReyya29/infoam/branch/main/graph/badge.svg)](https://codecov.io/gh/HarishReyya29/infoam)
-[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
-[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
-[![Publish](https://github.com/HarishReyya29/infoam/actions/workflows/pypi-publish.yml/badge.svg)](https://github.com/HarishReyya29/infoam/actions/workflows/pypi-publish.yml)
-[![PyPI](https://img.shields.io/pypi/v/infoam)](https://pypi.org/project/infoam/)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/infoam)](https://anaconda.org/conda-forge/infoam)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/infoam)](https://pypi.org/project/infoam/)
-![OpenFOAM](https://img.shields.io/badge/openfoam-.com%20|%20.org-informational)
-[![Docker](https://github.com/HarishReyya29/infoam/actions/workflows/docker.yml/badge.svg)](https://github.com/HarishReyya29/infoam/actions/workflows/docker.yml)
-[![Docker image](https://img.shields.io/badge/docker%20image-harishreyya29%2Finfoam-0085a0)](https://hub.docker.com/r/harishreyya29/infoam/)
 
 ## Introduction
 
@@ -178,7 +162,6 @@ Develop a script to automate case execution or cleanup.
 ## Performance
 
 <div align="center">
-<img alt="benchmark" src="https://github.com/HarishReyya29/infoam/raw/main/benchmark/benchmark.png" height="250">
 
 Parsing a volVectorField with 200k cells.<sup>[1](#benchmark)</sup>
 </div>
