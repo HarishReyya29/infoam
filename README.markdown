@@ -1,4 +1,3 @@
-[<img alt="infoam" src="https://github.com/HarishReyya29/infoam/raw/main/logo.png" height="65">](https://github.com/HarishReyya29/infoam)
 
 # infoam
 
