@@ -143,7 +143,6 @@ case.run()
 ## Performance
 
 <div align="center">
-<img alt="benchmark" src="https://github.com/HarishReyya29/infoam/raw/main/benchmark/benchmark.png" height="250">
 
 Parsing a volVectorField with 200k cells.<sup>[1](#benchmark)</sup>
 </div>
