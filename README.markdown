@@ -1,32 +1,47 @@
+[<img alt="infoam" src="https://github.com/HarishReyya29/infoam/raw/main/logo.png" height="65">](https://github.com/HarishReyya29/infoam)
 
 # infoam
 
-**infoam** provides a simple, modern, ergonomic, and fast Python interface for interacting with [OpenFOAM](https://www.openfoam.com).
+**infoam** is a Python library designed to streamline interaction with [OpenFOAM](https://www.openfoam.com), offering a user-friendly, contemporary, and efficient interface.
+
+[![Documentation](https://img.shields.io/readthedocs/infoam)](https://infoam-docs.readthedocs.io/)
+[![CI](https://github.com/HarishReyya29/infoam/actions/workflows/ci.yml/badge.svg)](https://github.com/HarishReyya29/infoam/actions/workflows/ci.yml)
+[![Codecov](https://codecov.io/gh/HarishReyya29/infoam/branch/main/graph/badge.svg)](https://codecov.io/gh/HarishReyya29/infoam)
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
+[![Publish](https://github.com/HarishReyya29/infoam/actions/workflows/pypi-publish.yml/badge.svg)](https://github.com/HarishReyya29/infoam/actions/workflows/pypi-publish.yml)
+[![PyPI](https://img.shields.io/pypi/v/infoam)](https://pypi.org/project/infoam/)
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/infoam)](https://anaconda.org/conda-forge/infoam)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/infoam)](https://pypi.org/project/infoam/)
+![OpenFOAM](https://img.shields.io/badge/openfoam-.com%20|%20.org-informational)
+[![Docker](https://github.com/HarishReyya29/infoam/actions/workflows/docker.yml/badge.svg)](https://github.com/HarishReyya29/infoam/actions/workflows/docker.yml)
+[![Docker image](https://img.shields.io/badge/docker%20image-harishreyya29%2Finfoam-0085a0)](https://hub.docker.com/r/harishreyya29/infoam/)
 
 ## Introduction
 
-**infoam** is a Python package I, Harish REYYA, developed to simplify the manipulation of OpenFOAM cases and files. Its standalone parser makes it easy to work with OpenFOAM’s input/output files from Python, while its case-handling capabilities facilitate various execution workflows—reducing boilerplate code and enabling efficient Python-based pre- and post-processing, as well as simulation management.
+**infoam** is a Python package I, Harish REYYA, crafted to enhance the management of OpenFOAM cases and files. Equipped with an independent parser, it simplifies handling OpenFOAM’s file formats in Python, while its case management tools support efficient workflows, minimizing repetitive code and enabling seamless pre-processing, post-processing, and simulation execution.
 
-Compared to [PyFoam](https://openfoamwiki.net/index.php/Contrib/PyFoam) and other similar tools like [fluidfoam](https://github.com/fluiddyn/fluidfoam), [fluidsimfoam](https://foss.heptapod.net/fluiddyn/fluidsimfoam), and [Ofpp](https://github.com/xu-xianghua/ofpp), **infoam** offers advantages such as modern Python compatibility, support for binary-formatted fields, a fully type-hinted API, and asynchronous operations; making OpenFOAM workflows more accessible and streamlined.
+In comparison to tools like [PyFoam](https://openfoamwiki.net/index.php/Contrib/PyFoam), [fluidfoam](https://github.com/fluiddyn/fluidfoam), [fluidsimfoam](https://foss.heptapod.net/fluiddyn/fluidsimfoam), and [Ofpp](https://github.com/xu-xianghua/ofpp), **infoam** stands out with its support for modern Python versions, handling of binary field formats, a type-hinted API, and asynchronous processing, making OpenFOAM tasks more approachable and optimized.
 
 ## Classes
 
-**infoam** offers the following Python classes:
+**infoam** provides the following Python classes:
 
-* [`FoamFile`](https://infoam.readthedocs.io/en/stable/files.html#foamlib.FoamFile) (and [`FoamFieldFile`](https://infoam.readthedocs.io/en/stable/files.html#foamlib.FoamFieldFile)): read-write access to OpenFOAM configuration and field files as if they were Python `dict`s, using `infoam`'s own parser and in-place editor. Supports ASCII and binary field formats (with or without compression).
-* [`FoamCase`](https://infoam.readthedocs.io/en/stable/cases.html#foamlib.FoamCase): a class for configuring, running, and accessing the results of OpenFOAM cases.
-* [`AsyncFoamCase`](https://infoam.readthedocs.io/en/stable/cases.html#foamlib.AsyncFoamCase): variant of `FoamCase` with asynchronous methods for running multiple cases at once.
-* [`AsyncSlurmFoamCase`](https://infoam.readthedocs.io/en/stable/cases.html#foamlib.AsyncSlurmFoamCase): subclass of `AsyncFoamCase` used for running cases on a Slurm cluster.
+* [`FoamFile`](https://infoam-docs.readthedocs.io/en/stable/files.html#foamlib.FoamFile) (and [`FoamFieldFile`](https://infoam-docs.readthedocs.io/en/stable/files.html#foamlib.FoamFieldFile)): Enable reading and writing OpenFOAM configuration and field files as Python dictionaries, using infoam’s custom parser and editor. Supports both ASCII and binary formats, with or without compression.
+* [`FoamCase`](https://infoam-docs.readthedocs.io/en/stable/cases.html#foamlib.FoamCase): Facilitates configuration, execution, and result retrieval for OpenFOAM cases.
+* [`AsyncFoamCase`](https://infoam-docs.readthedocs.io/en/stable/cases.html#foamlib.AsyncFoamCase): A version of `FoamCase` with asynchronous methods for concurrent case execution.
+* [`AsyncSlurmFoamCase`](https://infoam-docs.readthedocs.io/en/stable/cases.html#foamlib.AsyncSlurmFoamCase): Extends `AsyncFoamCase` for running cases on Slurm-based HPC clusters.
 
 ## Installation
 
-### With pip
+### Using pip
 
 ```bash
 pip install infoam
 ```
 
-### With conda
+### Using conda
 
 ```bash
 conda install -c conda-forge infoam
@@ -34,9 +49,9 @@ conda install -c conda-forge infoam
 
 ## Usage
 
-Below are examples demonstrating how to use **infoam** for common OpenFOAM workflows.
+The following examples illustrate how to leverage **infoam** for typical OpenFOAM tasks.
 
-### Clone a Case
+### Duplicating a Case
 
 ```python
 import os
@@ -48,13 +63,17 @@ pitz_tutorial = FoamCase(Path(os.environ["FOAM_TUTORIALS"]) / "incompressible/si
 my_pitz = pitz_tutorial.clone("myPitz")
 ```
 
-### Run the Case
+Create a copy of an existing OpenFOAM case for further modification.
+
+### Executing a Case
 
 ```python
 my_pitz.run()
 ```
 
-### Access the Results
+Run the duplicated case to perform the simulation.
+
+### Retrieving Results
 
 ```python
 latest_time = my_pitz[-1]
@@ -66,19 +85,25 @@ print(p.internal_field)
 print(U.internal_field)
 ```
 
-### Clean the Case
+Access and display the pressure and velocity fields from the latest simulation timestep.
+
+### Cleaning Up a Case
 
 ```python
 my_pitz.clean()
 ```
 
-### Edit the `controlDict` File
+Remove temporary files generated during the simulation to reset the case.
+
+### Modifying the `controlDict` File
 
 ```python
 my_pitz.control_dict["writeInterval"] = 10
 ```
 
-### Make Multiple File Reads and Writes in a Single Go
+Adjust the write interval in the case’s control settings.
+
+### Performing Multiple File Operations Efficiently
 
 ```python
 with my_pitz.fv_schemes as f:
@@ -86,7 +111,9 @@ with my_pitz.fv_schemes as f:
     f["snGradSchemes"]["default"] = "uncorrected"
 ```
 
-### Run a Case Asynchronously
+Update multiple settings in the finite volume schemes file in a single operation.
+
+### Running a Case Asynchronously
 
 ```python
 import asyncio
@@ -99,7 +126,9 @@ async def run_case():
 asyncio.run(run_case())
 ```
 
-### Parse a Field Using the `FoamFieldFile` Class Directly
+Execute a case asynchronously to enable concurrent processing.
+
+### Directly Parsing a Field
 
 ```python
 from foamlib import FoamFieldFile
@@ -109,7 +138,9 @@ U = FoamFieldFile(Path(my_pitz) / "0/U")
 print(U.internal_field)
 ```
 
-### Run an Optimization Loop on a Slurm-based Cluster
+Load and inspect the initial velocity field from a file.
+
+### Optimizing on a Slurm Cluster
 
 ```python
 import os
@@ -122,13 +153,15 @@ base = AsyncSlurmFoamCase(Path(os.environ["FOAM_TUTORIALS"]) / "incompressible/s
 async def cost(x):
     async with base.clone() as clone:
         clone[0]["U"].boundary_field["inlet"].value = [x[0], 0, 0]
-        await clone.run(fallback=True) # Run locally if Slurm is not available
+        await clone.run(fallback=True) # Run locally if Slurm is unavailable
         return abs(clone[-1]["U"].internal_field[0][0])
 
 result = differential_evolution(cost, bounds=[(-1, 1)], workers=AsyncSlurmFoamCase.map, polish=False)
 ```
 
-### Use It to Create a `run` (or `clean`) Script
+Perform an optimization loop by running cases on a Slurm cluster or locally.
+
+### Creating a `run` or `clean` Script
 
 ```python
 #!/usr/bin/env python3
@@ -136,37 +169,43 @@ from pathlib import Path
 from foamlib import FoamCase
 
 case = FoamCase(Path(__file__).parent)
-# Any additional configuration here
+# Add custom configurations here
 case.run()
 ```
+
+Develop a script to automate case execution or cleanup.
 
 ## Performance
 
 <div align="center">
+<img alt="benchmark" src="https://github.com/HarishReyya29/infoam/raw/main/benchmark/benchmark.png" height="250">
 
 Parsing a volVectorField with 200k cells.<sup>[1](#benchmark)</sup>
 </div>
 
 **Footnote**
 
-<a id="benchmark">[1]</a> infoam 0.8.1 vs PyFoam 2023.7 on a MacBook Air (2020, M1) with 8 GB of RAM. [Benchmark script](https://github.com/HarishReyya29/infoam/raw/main/benchmark/benchmark.py).
+<a id="benchmark">[1]</a> infoam 0.8.1 outperforms PyFoam 2023.7 on a MacBook Air (2020, M1) with 8 GB of RAM. [Benchmark script](https://github.com/HarishReyya29/infoam/raw/main/benchmark/benchmark.py).
 
 ## Documentation
 
-For details on how to use **infoam**, check out the [documentation](https://infoam.readthedocs.io/).
+Explore detailed guidance on using **infoam** in the [documentation](https://infoam-docs.readthedocs.io/).
 
 ## Support
 
-If you have any questions or need help, feel free to open a [discussion](https://github.com/HarishReyya29/infoam/discussions).
+For questions or assistance, start a [discussion](https://github.com/HarishReyya29/infoam/discussions).
 
-If you believe you have found a bug in **infoam**, please open an [issue](https://github.com/HarishReyya29/infoam/issues).
+To report a potential bug in **infoam**, please create an [issue](https://github.com/HarishReyya29/infoam/issues).
 
+## Contributing
+
+Contributions to **infoam** are welcome! Review the [contributing guidelines](https://github.com/HarishReyya29/infoam/raw/main/CONTRIBUTING.md) for details.
 
 ## Citation
 
-If you find **infoam** useful for your work, don't forget to cite it!
+If **infoam** proves valuable for your work, please consider citing it to support the project.
 
-Citations help support the project. You may find the following snippets useful:
+The following citation formats are provided for convenience:
 
 <details>
 <summary>BibTeX</summary>
@@ -178,7 +217,7 @@ Citations help support the project. You may find the following snippets useful:
     month = may,
     number = {109},
     pages = {7633},
-    title = {{infoam: A modern Python package for working with OpenFOAM}},
+    title = {{infoam: A Python Package for OpenFOAM Interaction}},
     volume = {10},
     year = {2025}
 }
@@ -189,6 +228,6 @@ Citations help support the project. You may find the following snippets useful:
 <details>
 <summary>APA</summary>
 
-REYYA, H. (2025). infoam: A modern Python package for working with OpenFOAM.
+REYYA, H. (2025). infoam: A Python Package for OpenFOAM Interaction. 10(109), 7633. https://doi.org/10.21105/joss.07633
 
 </details>
