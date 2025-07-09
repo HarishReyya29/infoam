@@ -1,6 +1,6 @@
 # infoam
 
-**infoam** is a Python library designed to streamline interaction with [OpenFOAM](https://www.openfoam.com), offering a user-friendly, contemporary, and efficient interface.
+**infoam** is a Python library (in development stage) designed to streamline interaction with [OpenFOAM](https://www.openfoam.com), offering a user-friendly, contemporary, and efficient interface.
 
 ## Introduction
 
